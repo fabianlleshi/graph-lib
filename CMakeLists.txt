@@ -10,3 +10,4 @@ add_library(graphlib src/graph.cpp)
 target_include_directories(graphlib PUBLIC include)
 
 enable_testing()
+add_subdirectory(tests)
