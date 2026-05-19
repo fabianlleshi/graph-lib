@@ -13,5 +13,9 @@ FetchContent_MakeAvailable(googletest)
 add_executable(test_graph test_graph.cpp)
 target_link_libraries(test_graph PRIVATE graphlib GTest::gtest_main)
 
+add_executable(test_bfs test_bfs.cpp)
+target_link_libraries(test_bfs PRIVATE graphlib GTest::gtest_main)
+
 include(GoogleTest)
 gtest_discover_tests(test_graph)
+gtest_discover_tests(test_bfs)

@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <vector>
 
-#include "graph-lib/graph.hpp"
+#include "graphlib/graph.hpp"
 
 using graphlib::Graph;
 using graphlib::GraphBuilder;

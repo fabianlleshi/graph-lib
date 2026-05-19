@@ -6,7 +6,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_compile_options(-Wall -Wextra)
 
-add_library(graphlib src/graph.cpp)
+add_library(graphlib
+    src/graph.cpp
+    src/bfs.cpp
+)
 target_include_directories(graphlib PUBLIC include)
 
 enable_testing()

@@ -1,4 +1,4 @@
-#include "graph-lib/graph.hpp"
+#include "graphlib/graph.hpp"
 
 #include <algorithm>
 #include <stdexcept>

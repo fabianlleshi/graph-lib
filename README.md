@@ -1,1 +1,1 @@
-# graph-lib
+# graphlib
