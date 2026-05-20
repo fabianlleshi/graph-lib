@@ -16,6 +16,10 @@ target_link_libraries(test_graph PRIVATE graphlib GTest::gtest_main)
 add_executable(test_bfs test_bfs.cpp)
 target_link_libraries(test_bfs PRIVATE graphlib GTest::gtest_main)
 
+add_executable(test_components test_components.cpp)
+target_link_libraries(test_components PRIVATE graphlib GTest::gtest_main)
+
 include(GoogleTest)
 gtest_discover_tests(test_graph)
 gtest_discover_tests(test_bfs)
+gtest_discover_tests(test_components)
