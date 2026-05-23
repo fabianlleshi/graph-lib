@@ -14,5 +14,8 @@ add_library(graphlib
 )
 target_include_directories(graphlib PUBLIC include)
 
+add_executable(graphlib_cli src/main.cpp)
+target_link_libraries(graphlib_cli PRIVATE graphlib)
+
 enable_testing()
 add_subdirectory(tests)
