@@ -11,6 +11,7 @@ add_library(graphlib
     src/bfs.cpp
     src/components.cpp
     src/io.cpp
+    src/dfs.cpp
 )
 target_include_directories(graphlib PUBLIC include)
 
