@@ -12,6 +12,7 @@ add_library(graphlib
     src/components.cpp
     src/io.cpp
     src/dfs.cpp
+    src/dijkstra.cpp
 )
 target_include_directories(graphlib PUBLIC include)
 

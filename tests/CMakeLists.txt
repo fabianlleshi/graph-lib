@@ -25,9 +25,13 @@ target_link_libraries(test_io PRIVATE graphlib GTest::gtest_main)
 add_executable(test_dfs test_dfs.cpp)
 target_link_libraries(test_dfs PRIVATE graphlib GTest::gtest_main)
 
+add_executable(test_dijkstra test_dijkstra.cpp)
+target_link_libraries(test_dijkstra PRIVATE graphlib GTest::gtest_main)
+
 include(GoogleTest)
 gtest_discover_tests(test_graph)
 gtest_discover_tests(test_bfs)
 gtest_discover_tests(test_components)
 gtest_discover_tests(test_io)
 gtest_discover_tests(test_dfs)
+gtest_discover_tests(test_dijkstra)
