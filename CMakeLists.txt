@@ -14,6 +14,7 @@ add_library(graphlib
     src/dfs.cpp
     src/dijkstra.cpp
     src/modular_decomposition.cpp
+    src/lbfs.cpp
 )
 target_include_directories(graphlib PUBLIC include)
 
