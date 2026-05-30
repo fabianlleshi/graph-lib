@@ -34,7 +34,8 @@ struct MDNode {
 };
 
 std::vector<NodeId> collect_leaves(const MDNode& root);
-
 bool verify_modules(const Graph& g, const MDNode& root);
+
+std::unique_ptr<MDNode> assemble_md(const Graph& g, const std::vector<NodeId>& perm);
 
 }
